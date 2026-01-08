@@ -1,5 +1,5 @@
 # Business-Intelligence-Files-and-Code
-This repository contains the cleaned dataset, preprocessing scripts, and machine learning code developed for a Business Intelligence (BI) predictive analytics project focused on inventory understock risk prediction.
+This repository contains the cleaned dataset, preprocessing steps, and machine learning code developed for a Business Intelligence (BI) predictive analytics project focused on inventory understock risk prediction.
 
 Two predictive models were implemented and compared:
 - Logistic Regression  
@@ -12,47 +12,60 @@ The objective of this project is to evaluate model performance and develop predi
 
 ## Dataset
 The dataset used in this study represents SKU-level inventory, sales, and supplier information and has undergone systematic preprocessing to ensure data quality and modelling suitability.
+### Dataset Source
+- Supply Chain Inventory Management
+- (https://www.kaggle.com/datasets/mustofaahmad/inventory-management-grocery-industry/data?select=Inventory+Management+E-Grocery+-+InventoryData.csv)
 
 **Key characteristics:**
-- Final dataset size: **10,000+ SKU records (after cleaning)**
+- Final dataset size: **1000 SKU records (after cleaning)**
 - Target variable: `Understock`
-- Numerical features include:
-  - Weeks_Inventory
-  - Available_Stock
-  - Quantity_On_Hand
-  - Sales_Volume
-  - Demand and inventory turnover indicators
-    
-- Categorical features include:
+- Features (after selected) include:
   - SKU_ID
-  - Product_Category
-  - Supplier
-  - Sales_Channel
+  - SKU_Name
+  - Quantity_On_Hand
+  - Quantity_Reserved
+  - Quantity_Committed
+  - Avg_Daily_Sales
+  - Lead_Time_Days
+  - Safety_Stock
+  - Reorder_Point
+  - Stock_Age_Days
+  - Supplier_OnTime_Pct
+  - Demand_Forecast_Accuracy_Pct
+  - Category
+  - ABC_Class
+  - Warehouse_ID
+  - Weekly_Sales
+  - Available_Stock
+  - Weeks_Inventory
+  - Days_to_Expiry
+  - Stock_Weekly_Status
+  - Stock_Week_Status_Num 
+
 
 The cleaned dataset is included in this repository for reproducibility.
 
 ---
 
-## Repository Structure
-This repository includes the following scripts and notebooks:
-
-- **Data Preprocessing**
+## Data Preprocessing
   - Data cleaning and validation
   - Handling missing values
   - Feature engineering
   - Encoding categorical variables
-  - Feature scaling for Logistic Regression
+  - Feature scaling
 
-- **Model Implementations**
-  -Logistic Regression (binary classification)
+### SAS Enterprise Guide 
+Preprocessing steps can be found in this file:
+
+## Model Implementations
+  - Logistic Regression (binary classification)
   - Random Forest (ensemble classification)
 
 Each model includes Training and testing phases, Probability-based predictions, Confusion matrix and classification metrics, Feature importance analysis
 
----
 
 ## Google Colab Notebook
-All preprocessing and model training steps can be executed directly using Google Colab:
+Preprocessing and model training steps can be executed directly using Google Colab:
 
 **Google Colab Link:**  
 [https://colab.research.google.com/drive/1ZtCrbmm1F4ycsc8-43XK3h4M-0U1mRk8?usp=sharing]
@@ -73,7 +86,7 @@ This evaluation approach ensures balanced assessment of both stock-out risk dete
 ---
 
 ## Key Findings
-- EBoth models achieved very high predictive performance, indicating strong data quality and feature relevance.
+- Both models achieved very high predictive performance, indicating strong data quality and feature relevance.
 - Random Forest achieved perfect classification on the test dataset, with no false positives or false negatives.
 - Logistic Regression successfully identified all understock cases, but produced a small number of false positives.
 - Inventory-related variables such as Weeks of Inventory and Available Stock were consistently the most influential predictors across both models.
@@ -88,17 +101,3 @@ This evaluation approach ensures balanced assessment of both stock-out risk dete
 - Minimise inventory waste
 - Improve overall supply chain sustainability
 
----
-
-## Usage
-1.Clone this repository
-2.Open the provided notebooks or scripts
-3.Load the cleaned dataset
-4.Execute preprocessing and model training steps
-5.Review model outputs, metrics, and feature importance results  
-
----
-
-## Data Source
-Supply Chain Inventory Management  
-(https://www.kaggle.com/datasets/mustofaahmad/inventory-management-grocery-industry/data?select=Inventory+Management+E-Grocery+-+InventoryData.csv)
