@@ -56,6 +56,7 @@ The cleaned dataset is included in this repository for reproducibility.
 
 ### SAS Enterprise Guide 
 Preprocessing steps can be found in this file:
+[Data Preparation using SAS Enterprise Guide](https://github.com/wenli262/Business-Intelligence-Files-and-Code/blob/main/Group25_Data%20Preparation.egp)
 
 ## Model Implementations
   - Logistic Regression (binary classification)
