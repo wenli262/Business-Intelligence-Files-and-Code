@@ -65,7 +65,7 @@ Preprocessing steps can be found in this file:
 Each model includes Training and testing phases, Probability-based predictions, Confusion matrix and classification metrics, Feature importance analysis
 
 
-## Google Colab Notebook
+### Google Colab Notebook
 Preprocessing and model training steps can be executed directly using Google Colab:
 
 **Google Colab Link:**  
@@ -77,13 +77,12 @@ The notebook provides an end-to-end workflow, including data loading, preprocess
 
 ## Evaluation Strategy
 Model performance is evaluated using:
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion Matrix
-  
-This evaluation approach ensures balanced assessment of both stock-out risk detection and false alert minimisation, which are critical for inventory decision-making.
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - Confusion Matrix
+#### This evaluation approach ensures balanced assessment of both stock-out risk detection and false alert minimisation, which are critical for inventory decision-making.
 ---
 
 ## Key Findings
