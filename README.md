@@ -43,8 +43,6 @@ The dataset used in this study represents SKU-level inventory, sales, and suppli
   - Stock_Week_Status_Num 
 
 
-The cleaned dataset is included in this repository for reproducibility.
-
 ---
 
 ## Data Preprocessing
@@ -66,7 +64,7 @@ Each model includes Training and testing phases, Probability-based predictions, 
 
 
 ### Google Colab Notebook
-Preprocessing and model training steps can be executed directly using Google Colab:
+Some preprocessing and model training steps can be executed directly using Google Colab:
 
 **Google Colab Link:**  
 [https://colab.research.google.com/drive/1ZtCrbmm1F4ycsc8-43XK3h4M-0U1mRk8?usp=sharing]
