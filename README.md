@@ -100,5 +100,5 @@ This evaluation approach ensures balanced assessment of both stock-out risk dete
 ---
 
 ## Data Source
-ReFED Food Waste Monitor  
+Supply Chain Inventory Management  
 (https://www.kaggle.com/datasets/mustofaahmad/inventory-management-grocery-industry/data?select=Inventory+Management+E-Grocery+-+InventoryData.csv)
